@@ -39,7 +39,7 @@ public class Winner {
     }
 
     public double getAveSpeed() {
-        return ((double) getLengthKm() / (getWinningTime().getSeconds() / 3600));
+        return ((double) getLengthKm() / ((double) getWinningTime().getSeconds() / 3600));
     }
 
     public int getYear() {
@@ -105,6 +105,24 @@ public class Winner {
     public void setDaysInYellow(int daysInYellow) {
         this.daysInYellow = daysInYellow;
     }
+
+    @SuppressWarnings("unused")
+    private static void api(){
+        Winner w = new Winner(2016, "Great Britain", "Chris Froome", "Team Sky", 3529, Duration.parse("PT89H04M48S"), 14);
+        w.setYear(2017);
+        w.setNationality("Great Britain");
+        w.setName("Chris Froome");
+        w.setTeam("Team Sky");
+        w.setLengthKm(3540);
+        w.setWinningTime(Duration.parse("PT89H04M48S"));
+        w.setStageWins(14);
+        w.setDaysInYellow(14);
+        System.out.println(w.getAveSpeed());
+        System.out.println(w.getStageWins());
+        System.out.println(w.getDaysInYellow());
+
+    }
+
 
     @Override
     public String toString() {
