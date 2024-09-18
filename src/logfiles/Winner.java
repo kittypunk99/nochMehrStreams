@@ -1,7 +1,7 @@
+package logfiles;
+
 import java.time.Duration;
 import java.util.*;
-
-import static java.util.stream.Collectors.*;
 
 public class Winner {
     private int year;
@@ -39,7 +39,7 @@ public class Winner {
     }
 
     public double getAveSpeed() {
-        return (getLengthKm() / (getWinningTime().getSeconds() / 3600));
+        return ((double) getLengthKm() / (getWinningTime().getSeconds() / 3600));
     }
 
     public int getYear() {
