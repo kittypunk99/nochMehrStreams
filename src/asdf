@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 - Seite nicht gefunden</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404 - Seite nicht gefunden</h1>
+        <p>Leider konnten wir die gewünschte Seite nicht finden.</p>
+        <p>Erstellt von: <strong>Freistetter</strong></p>
+        <p>Klasse: <strong>3CI</strong></p>
+        <p>Gehe zurück zur <a href="/">Startseite</a>.</p>
+    </div>
+</body>
+</html>

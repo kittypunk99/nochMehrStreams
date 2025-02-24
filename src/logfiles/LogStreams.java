@@ -24,7 +24,7 @@ public class LogStreams {
     }
 
     public static List<Winner> winnerObjectsOfToursLessThan3500kmLimit2() {
-        return Winner.tdfWinners.stream().filter(w -> w.getLengthKm() < 3500).limit(2).collect(Collectors.toList());
+        return Winner.tdfWinners.stream().filter(w -> w.getLengthKm() < 3500).limit(2).collect(Collectors.toList());//gsdf
     }
 
     public static List<String> firstTwoWinnersOfToursLessThan3500km() {
